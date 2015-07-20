@@ -12,4 +12,4 @@ once you git clone it, you just need to:
 
 I made a quick and easy task to bulk add orders too: with the number passed in as the number of random orders you want created.
 
-rake orders:bulk_add[5]
+'rake orders:bulk_add[5]'
