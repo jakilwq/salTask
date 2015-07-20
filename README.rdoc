@@ -3,9 +3,11 @@
 It should be pretty simple and obvious on how to install and run it.
 once you git clone it, you just need to: 
 
-bundle install
-rake db:create
-rake db:migrate
+'bundle install'
+
+'rake db:create'
+
+'rake db:migrate'
 
 
 I made a quick and easy task to bulk add orders too: with the number passed in as the number of random orders you want created.
