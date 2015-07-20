@@ -3,16 +3,16 @@
 
 one:
   stripe_id: 1
-  email: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: MyString
+  email: 'test@test.org'
+  address: '123 fake st'
+  city: 'Seattle'
+  state: 'WA'
+  zip: '98101'
 
 two:
-  stripe_id: 1
-  email: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: MyString
+  stripe_id: 2
+  email: 'dan@dan.com'
+  address: '1121 super dr.'
+  city: 'Memphis'
+  state: 'WY'
+  zip: '10007'

@@ -3,7 +3,7 @@ namespace :orders do
 
   task :bulk_add, [:amount] => :environment do |task, args|
     unless args.amount.to_i > 0
-      puts "Please pass in an non-zero integer like this 'rake orders:bulk_add[100]'"
+      puts "Please pass in an non-zero integer like this ''"
       return 
     end
 
