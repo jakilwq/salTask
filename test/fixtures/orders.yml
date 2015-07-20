@@ -1,0 +1,18 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  stripe_id: 1
+  email: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+
+two:
+  stripe_id: 1
+  email: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString

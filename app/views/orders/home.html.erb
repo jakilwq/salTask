@@ -1,0 +1,103 @@
+<!-- Jumbotron Header -->
+<header class="jumbotron hero-spacer">
+  <%= image_tag "sea_hero.jpg" %>
+    <h1>Säl : Hydrate with the Sea</h1>
+    
+    <p id="notify"></p>
+    <p id="total"><%= @order_count %> säl bought</p>
+
+    <p>
+        Sustainable flexitarian ennui kale chips, Austin Shoreditch bitters trust fund ethical chia fanny pack butcher XOXO single-origin coffee. Swag cardigan Blue Bottle, taxidermy crucifix cornhole McSweeney's direct trade whatever meh kitsch scenester photo booth bicycle rights fashion axe. </p>
+    <p><button class="btn btn-primary btn-large buy-sal">: buy säl :</button>
+    </p>
+</header>
+
+<hr>
+
+<!-- Title -->
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Latest Features</h3>
+    </div>
+</div>
+<!-- /.row -->
+
+<!-- Page Features -->
+<div class="row text-center">
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="http://placehold.it/800x500" alt="">
+            <div class="caption">
+                <h3>Taste the Sea</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <button class="btn btn-primary buy-sal">: buy säl :</button> <a href="#" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="http://placehold.it/800x500" alt="">
+            <div class="caption">
+                <h3>Hot Yoga</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <button class="btn btn-primary buy-sal">: buy säl :</button> <a href="#" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="http://placehold.it/800x500" alt="">
+            <div class="caption">
+                <h3>Hawaiian Hotsprings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <button class="btn btn-primary buy-sal">: buy säl :</button> <a href="#" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="http://placehold.it/800x500" alt="">
+            <div class="caption">
+                <h3>Rehydrates you with Nature.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <button class="btn btn-primary buy-sal">: buy säl :</button> <a href="#" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.row -->
+
+<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; säl</p>
+        </div>
+    </div>
+</footer>
+
+<%= render "layouts/modal" %>
+
+<script>
+$(function() {
+  // Handler for .ready() called.
+  $('.buy-sal').click(function() {
+    $('#myModal').modal();
+  });
+});
+</script>
