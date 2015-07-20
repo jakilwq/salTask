@@ -1,4 +1,5 @@
 Rails.application.configure do
+  require 'pusher'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -76,4 +77,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+
+
+  Pusher.app_id = '129803'
+  Pusher.key = '5c1cae8c48708e1f8953'
+  Pusher.secret = '04d86020c7ba57dd3226'
 end

@@ -1,4 +1,5 @@
 Rails.application.configure do
+  require 'pusher'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -38,4 +39,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  Pusher.app_id = '129803'
+  Pusher.key = '5c1cae8c48708e1f8953'
+  Pusher.secret = '04d86020c7ba57dd3226'
+
 end
