@@ -16,5 +16,8 @@ class OrderTest < ActiveSupport::TestCase
     assert_instance_of Order, order
   end
 
-  
+
+  def test_cannot_save_empty_order
+    assert_raises(Exception) { order.save! }
+  end
 end
