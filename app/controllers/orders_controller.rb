@@ -31,7 +31,7 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
 
     respond_to do |format|
-      if @order.save
+      if @order.save_with_payment
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
       else
@@ -73,6 +73,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:stripe_id, :email, :address, :city, :state, :zip)
+      params.require(:order).permit(:stripe_id, :email, :address, :city, :state, :zip, :cc, :cvc, :exp_month, :exp_year, :stripe_card_token, :stripeToken)
     end
 end
